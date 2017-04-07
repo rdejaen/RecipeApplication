@@ -23,13 +23,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/editText"
         android:editable="true"
         android:layout_marginTop="128dp"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:selectAllOnFocus="true"
+        android:textIsSelectable="true"
+        android:hint="Name" />
 
     <Button
         android:layout_width="wrap_content"
