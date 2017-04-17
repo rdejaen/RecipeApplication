@@ -19,7 +19,16 @@
         <activity
             android:name=".BrowseActivity"
             android:label="@string/title_activity_browse"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CatActivity" />
+        <activity android:name=".TipsActivity" />
+        <activity
+            android:name=".FavsActivity"
+            android:label="@string/title_activity_favs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
