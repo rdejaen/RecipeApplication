@@ -12,6 +12,7 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
         Button browse = (Button) findViewById(R.id.browse); //creates the button to continue to the next activity
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -20,7 +21,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        Button categories = (Button)findViewById(R.id.categories);
+        Button categories = (Button) findViewById(R.id.categories);
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +29,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        Button tips = (Button)findViewById(R.id.tips);
+        Button tips = (Button) findViewById(R.id.tips);
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +37,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        Button favs = (Button)findViewById(R.id.favs);
+        Button favs = (Button) findViewById(R.id.favs);
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +45,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        Button settings = (Button)findViewById(R.id.settings);
+        Button settings = (Button) findViewById(R.id.settings);
         browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
