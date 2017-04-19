@@ -40,10 +40,8 @@
         android:layout_gravity="center_vertical"
         android:clickable="true"
         android:layout_alignTop="@+id/browse"
-        android:layout_alignRight="@+id/settings"
-        android:layout_alignEnd="@+id/settings"
-        android:layout_alignLeft="@+id/favs"
-        android:layout_alignStart="@+id/favs" />
+        android:layout_toRightOf="@+id/favs"
+        android:layout_toEndOf="@+id/favs" />
 
     <Button
         android:layout_width="wrap_content"
@@ -60,13 +58,14 @@
         android:text="@string/settings"
         android:id="@+id/settings"
         android:layout_column="3"
-        android:layout_span="38"
+        android:layout_span="40"
         android:clickable="true"
-        android:layout_above="@+id/favs"
-        android:layout_toRightOf="@+id/favs"
-        android:layout_toEndOf="@+id/favs"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favs"
+        android:layout_alignLeft="@+id/favs"
+        android:layout_alignStart="@+id/favs"
+        android:layout_marginTop="75dp" />
 
     <Button
         android:text="@string/tips"
@@ -75,8 +74,8 @@
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/favs"
-        android:layout_toRightOf="@+id/favs"
-        android:layout_toEndOf="@+id/favs" />
+        android:layout_above="@+id/favs"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
 
 </RelativeLayout>
