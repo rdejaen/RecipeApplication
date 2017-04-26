@@ -22,7 +22,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         Button categories = (Button) findViewById(R.id.categories);
-        browse.setOnClickListener(new View.OnClickListener() {
+        categories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToCatActivity();
@@ -30,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         Button tips = (Button) findViewById(R.id.tips);
-        browse.setOnClickListener(new View.OnClickListener() {
+        tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToTipsActivity();
@@ -38,7 +38,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         Button favs = (Button) findViewById(R.id.favs);
-        browse.setOnClickListener(new View.OnClickListener() {
+        favs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToFavsActivity();
@@ -46,7 +46,7 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         Button settings = (Button) findViewById(R.id.settings);
-        browse.setOnClickListener(new View.OnClickListener() {
+        settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToSettingsActivity();
