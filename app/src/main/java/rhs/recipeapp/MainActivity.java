@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         Button button = (Button) findViewById(R.id.button); //creates the button to continue to the next activity
         button.setOnClickListener(new View.OnClickListener() {
             @Override
