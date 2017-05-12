@@ -18,16 +18,16 @@ public final class DatabaseContract {
         public static final String COLUMN_NAME_INSTRUCTIONS = "instructions"; //with times
         // public static final String COLUMN_NAME_IMAGES = "images"; //images of recipe
         // public static final String COLUMN_NAME_CAPTIONS = "captions"; //captions for each image
+
+        public static final String CREATE_TABLE =
+                "CREATE TABLE " + MyRecipes.TABLE_NAME + " (" +
+                        MyRecipes.COLUMN_NAME_RECIPE_NAME + " TEXT," +
+                        MyRecipes.COLUMN_NAME_TIMES + " TEXT," +
+                        MyRecipes.COlUMN_NAME_NUM_SERVINGS + " TEXT," +
+                        MyRecipes.COlUMN_NAME_INGREDIENTS + " TEXT," +
+                        MyRecipes.COLUMN_NAME_INSTRUCTIONS + " TEXT)";
+
+        public static final String DELETE_TABLE =
+                "DROP TABLE IF EXISTS " + MyRecipes.TABLE_NAME;
     }
-
-    private static final String SQL_CREATE_ENTRIES =
-            "CREATE TABLE " + MyRecipes.TABLE_NAME + " (" +
-                    MyRecipes.COLUMN_NAME_RECIPE_NAME + " RECIPE NAME," +
-                    MyRecipes.COLUMN_NAME_TIMES + " TIMES," +
-                    MyRecipes.COlUMN_NAME_NUM_SERVINGS + " NUMBER OF SERVINGS," +
-                    MyRecipes.COlUMN_NAME_INGREDIENTS + " INGREDIENTS," +
-                    MyRecipes.COLUMN_NAME_INSTRUCTIONS + " INSTRUCTIONS)";
-
-    private static final String SQL_DELETE_ENTRIES =
-            "DROP TABLE IF EXISTS " + MyRecipes.TABLE_NAME;
 }
