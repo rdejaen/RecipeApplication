@@ -1,5 +1,7 @@
 package rhs.recipeapp;
 
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -21,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 goToSecondActivity();
             }
         });
+
+        // Create new helper
+        DatabaseHelper dbHelper = new DatabaseHelper(getApplicationContext());
+        // Get the database. If it does not exist, this is where it will
+        // also be created.
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
     }
 
     private void goToSecondActivity() {
