@@ -69,7 +69,7 @@
             android:editable="true"
             android:hint="Instructions "
             android:layout_weight="0.40"
-            android:text="mix all ingredients, bake for 10min" />
+            android:text="mix all ingredients, bake for 10 min" />
 
     </LinearLayout>
 </RelativeLayout>
